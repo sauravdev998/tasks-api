@@ -1,4 +1,4 @@
-import { Hono } from "hono";
+
 import app from "./app";
 import env from "./env";
 const port = env.PORT;
