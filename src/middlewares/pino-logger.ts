@@ -9,7 +9,7 @@ export function PinoLogger() {
       {
         level: env.LOG_LEVEL || "info",
       },
-      env.BUN_ENV === "production" ? PinoPretty() : undefined,
+      env.BUN_ENV === "production" ? undefined : PinoPretty(),
     ),
     http: {
       reqId: () => crypto.randomUUID(),
